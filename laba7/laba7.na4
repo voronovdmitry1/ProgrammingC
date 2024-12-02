@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main() {
+    char text[] = "Lorem i   psum dolor sit amet, con     sectetur adipiscing elit, s   ed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed semper auctor neque vitae tempus quam pellentesque. Faucibus purus in massa tempor nec feugiat nisl pretium. Ultricies mi eget mauris pharetra et ultrices neque ornare. Quam nulla porttitor massa id neque aliquam vestibulum morbi.";
+    int x_count = 0;
+    for (int i = 0; text[i] != '\0'; i++) {
+        if (text[i] != ' ') {
+            putchar(text[i]);
+        } else {
+            x_count++;
+        }
+    }
+    printf("Число пробелов: %d", x_count);
+    return 0;
+}
